@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button{
+    height: 50px;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(236, 25, 176);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: rgb(174, 55, 174);
+    position: absolute;
+    animation: name 0.6s linear;
+    transform: scale(0);
+}
+
+@keyframes name {
+    to{
+        transform: scale(3);
+        opacity: 0.5;
+        
+    }
+} 
